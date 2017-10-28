@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TasksViewController.swift
 //  Do It
 //
 //  Created by Wyz on 28/10/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TasksViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -66,11 +66,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
 
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! SecondViewController //saving the destination in nextVC
+        nextVC.previousVC = self //self = class you're in now
+        
     }
-
 
 }
 
