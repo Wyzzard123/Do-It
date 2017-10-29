@@ -10,10 +10,15 @@ import UIKit
 
 class DeletionViewController: UIViewController {
 
+    @IBOutlet weak var deletableTask: UILabel!
+    var tasktobeDeleted = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        deletableTask.text = tasktobeDeleted
 
         // Do any additional setup after loading the view.
+    }
+    @IBAction func taskDone(_ sender: Any) {
     }
 
     override func didReceiveMemoryWarning() {

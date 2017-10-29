@@ -63,14 +63,26 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBAction func plusTapped(_ sender: Any) {
         performSegue(withIdentifier: "moveSegue", sender: nil)
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let task = tasks[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "deleteSegue", sender: nil)
+      
+    }
 
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! SecondViewController //saving the destination in nextVC
+    override func prepare(for segue: UIStoryboardSegue, sender: task.name) {
+        var deleteVC = segue.destination as! DeletionViewController
+        deleteVC.tasktobeDeleted = sender as! String
+        var nextVC = segue.destination as! SecondViewController //saving the destination in nextVC
         nextVC.previousVC = self //self = class you're in now
+
         
     }
+
+    
+        
+    
 
 }
 
