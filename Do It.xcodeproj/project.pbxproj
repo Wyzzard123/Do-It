@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7155A61D1FA571F5008FADDD /* DeletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155A61C1FA571F5008FADDD /* DeletionViewController.swift */; };
 		715DCC711FA4B4EA00A693A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715DCC701FA4B4EA00A693A2 /* AppDelegate.swift */; };
 		715DCC731FA4B4EA00A693A2 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715DCC721FA4B4EA00A693A2 /* TasksViewController.swift */; };
 		715DCC761FA4B4EA00A693A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715DCC741FA4B4EA00A693A2 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7155A61C1FA571F5008FADDD /* DeletionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeletionViewController.swift; sourceTree = "<group>"; };
 		715DCC6D1FA4B4EA00A693A2 /* Do It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Do It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		715DCC701FA4B4EA00A693A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		715DCC721FA4B4EA00A693A2 /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				715DCC701FA4B4EA00A693A2 /* AppDelegate.swift */,
 				715DCC721FA4B4EA00A693A2 /* TasksViewController.swift */,
 				715DCC871FA4BC2B00A693A2 /* SecondViewController.swift */,
+				7155A61C1FA571F5008FADDD /* DeletionViewController.swift */,
 				715DCC741FA4B4EA00A693A2 /* Main.storyboard */,
 				715DCC851FA4B8D100A693A2 /* Task.swift */,
 				715DCC7A1FA4B4EA00A693A2 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				715DCC791FA4B4EA00A693A2 /* Do_It.xcdatamodeld in Sources */,
 				715DCC731FA4B4EA00A693A2 /* TasksViewController.swift in Sources */,
 				715DCC881FA4BC2B00A693A2 /* SecondViewController.swift in Sources */,
+				7155A61D1FA571F5008FADDD /* DeletionViewController.swift in Sources */,
 				715DCC711FA4B4EA00A693A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
